@@ -240,9 +240,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<figure class="text-center">
-							<img src="./static/images/behavior-edit-fig1.png" alt="framework" class="img-responsive" style="width: 70%; margin: 0 auto; display: block;">
+							<img src="./static/images/behavior/behav-edit-fig1.png" alt="framework" class="img-responsive" style="width: 80%; margin: 0 auto; display: block;">
 							<figcaption style="width: 100%; display: block; text-align: left;">
-								<b>Framework of Behavior Editing.</b> We introduce a novel paradigm that frames ethical behavior steering of LLM agents as a model editing task, enabling precise control over their moral decisions.
+								Behavior Editing enables directional steering of agent behavior: Benevolent Editing can steer agent behavior to be less harmful, while Malicious Editing induce harmful behavior..
 							</figcaption>
 						</figure>
 					</div>
@@ -346,7 +346,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" href="#finding3" class="collapsed" style="display: block; width: 100%;">
-										<b>Finding 3: Moral Alignment Shifts & Impact of Scenario Complexity</b>
+										<b>Finding 3: Impact of Scenario Complexity</b>
 										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
 									</a>
 								</h4>
@@ -361,14 +361,7 @@
 									<div class="caption">
 										<p>Impact of Behavior Editing on agents' moral accuracy across various datasets. Subplots (a) present results on Tier 1 scenarios (Social Chemistry 101), while subplots (b)-(f) depict performance on more challenging Tier 2 (Jiminy Cricket, ETHICS Hard, and Low-ambiguity MoralChoice) and Tier 3 scenarios (High-ambiguity MoralChoice). Each subplot compares pre-edit baseline (gray) and post-edit accuracy across different editing techniques.</p>
 									</div>
-									<img src="./static/images/behavior/impact-api.jpg" alt="efficacy" class="img-responsive">
-									<div class="caption">
-										<p>Comparison of pre-edit and post-edit accuracy for frontier LLM agents on low-ambiguity (left) and high-ambiguity (right) MoralChoice open questions. Solid bars indicate pre-edit performance, while hatched bars reflect post-edit accuracy following malicious editing attempts.</p>
-									</div>
-									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
-										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">
-											Finding 4:</span> Behavior Editing can induce extensive shifts in an agent's overall moral alignment. Parameter-modifying techniques (e.g., ROME, FT-M) exhibit greater efficacy compared to parameter-preserving methods such as ICE. Proprietary models display similar trends, with more recent models showing increased resilience to malicious editing attempts.</p>
-									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -377,12 +370,39 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" href="#finding4" class="collapsed" style="display: block; width: 100%;">
-										<b>Finding 5: Editing performance across five Normative Ethics dimensions </b>
+										<b>Finding 4: Moral Alignment Shifts</b>
 										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
 									</a>
 								</h4>
 							</div>
 							<div id="finding4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
+										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">
+											Finding 4:</span> Behavior Editing can induce extensive shifts in an agent's overall moral alignment. Parameter-modifying techniques (e.g., ROME, FT-M) exhibit greater efficacy compared to parameter-preserving methods such as ICE. Proprietary models display similar trends, with more recent models showing increased resilience to malicious editing attempts.</p>
+									</div>
+									<img src="./static/images/behavior/impact.jpg" alt="efficacy" class="img-responsive">
+									<div class="caption">
+										<p>Impact of Behavior Editing on agents' moral accuracy across various datasets. Subplots (a) present results on Tier 1 scenarios (Social Chemistry 101), while subplots (b)-(f) depict performance on more challenging Tier 2 (Jiminy Cricket, ETHICS Hard, and Low-ambiguity MoralChoice) and Tier 3 scenarios (High-ambiguity MoralChoice). Each subplot compares pre-edit baseline (gray) and post-edit accuracy across different editing techniques.</p>
+									</div>
+									<img src="./static/images/behavior/impact-api.jpg" alt="efficacy" class="img-responsive">
+									<div class="caption">
+										<p>Comparison of pre-edit and post-edit accuracy for frontier LLM agents on low-ambiguity (left) and high-ambiguity (right) MoralChoice open questions. Solid bars indicate pre-edit performance, while hatched bars reflect post-edit accuracy following malicious editing attempts.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#finding5" class="collapsed" style="display: block; width: 100%;">
+										<b>Finding 5: Editing performance across five Normative Ethics dimensions </b>
+										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="finding5" class="panel-collapse collapse">
 								<div class="panel-body">
 									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
 										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">
