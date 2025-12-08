@@ -4,25 +4,75 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Model Editing</title>
+	<title>Knowledge Editing and Model Editing for Large Language Models | LLM Research</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="LLM, Large Language Model, LLM, LLM Safety, Knowledge Editing">
+	<meta name="description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in Large Language Models (LLMs). Explore cutting-edge methods for correcting hallucinations, controlling model behavior, and understanding safety implications of model editing.">
+	<meta name="keywords" content="Knowledge Editing, Model Editing, LLM, Large Language Model, LLM Safety, Knowledge Editing Methods, Hallucination Correction, Behavior Editing, HalluEditBench, Editing Attack, AI Safety">
+	<meta name="author" content="Baixiang Huang, Model Editing Research Team">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<meta name="googlebot" content="index, follow">
+	<link rel="alternate" hreflang="en" href="https://model-editing.github.io">
 
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
-	<meta property="og:title" content="Model Editing" />
+	<meta property="og:title" content="Knowledge Editing and Model Editing for Large Language Models" />
+	<meta property="og:description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in LLMs. Explore methods for correcting hallucinations, controlling model behavior, and understanding safety implications of model editing." />
 	<meta property="og:locale" content="en_US" />
 	<link rel="canonical" href="https://model-editing.github.io" />
 	<meta property="og:url" content="https://model-editing.github.io/" />
-	<meta property="og:site_name" content="Model Editing" />
+	<meta property="og:site_name" content="Knowledge Editing and Model Editing Research" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://model-editing.github.io/static/images/logo_1.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="Model Editing" />
-	<meta name="twitter:description" content="Model Editing" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Knowledge Editing and Model Editing for LLMs" />
+	<meta name="twitter:description" content="Research hub for Knowledge Editing and Model Editing techniques in Large Language Models." />
 	<meta name="twitter:site" content="@BaixHuang" />
 	<meta name="twitter:image" content="https://model-editing.github.io/static/images/logo_1.png" />
 	<script type="application/ld+json">
-	{"@context":"https://schema.org","@type":"WebSite","headline":"Model Editing","name":"Model Editing","url":"https://model-editing.github.io/"}
+	{
+		"@context":"https://schema.org",
+		"@type":"WebSite",
+		"headline":"Knowledge Editing and Model Editing for Large Language Models",
+		"name":"Knowledge Editing and Model Editing Research",
+		"description":"Comprehensive research on Knowledge Editing techniques for LLMs including hallucination correction, behavior editing, and safety implications",
+		"url":"https://model-editing.github.io/",
+		"keywords":"Knowledge Editing, Model Editing, LLM, Hallucination Correction, Behavior Editing, AI Safety",
+		"publisher":{"@type":"Organization","name":"Model Editing Research Team"},
+		"mainEntity":[
+			{
+				"@type":"ScholarlyArticle",
+				"name":"Can Knowledge Editing Really Correct Hallucinations?",
+				"headline":"HalluEditBench: Benchmarking Knowledge Editing Methods for Hallucination Correction",
+				"description":"A comprehensive benchmark for evaluating knowledge editing methods in correcting real-world hallucinations in Large Language Models",
+				"author":[
+					{"@type":"Person","name":"Baixiang Huang"},
+				],
+				"datePublished":"2025",
+				"publisher":{"@type":"Organization","name":"ICLR 2025"}
+			},
+			{
+				"@type":"ScholarlyArticle",
+				"name":"Model Editing as a Double-Edged Sword: Steering Agent Ethical Behavior Toward Beneficence or Harm",
+				"headline":"Behavior Editing: A Novel Paradigm for Ethical Behavior Steering in AI Agents",
+				"description":"Introducing Behavior Editing, a novel knowledge editing paradigm for steering ethical behavior in LLM-based agents",
+				"author":[
+					{"@type":"Person","name":"Baixiang Huang"},
+				],
+				"datePublished":"2025",
+				"publisher":{"@type":"Organization","name":"AAAI 2026"}
+			},
+			{
+				"@type":"ScholarlyArticle",
+				"name":"Can Editing LLMs Inject Harm?",
+				"headline":"Editing Attack: A New Safety Threat for Large Language Models",
+				"description":"Research on editing attacks and their potential to inject misinformation and bias into LLMs through knowledge editing techniques",
+				"author":[
+					{"@type":"Person","name":"Baixiang Huang"},
+				],
+				"datePublished":"2025",
+				"publisher":{"@type":"Organization","name":"AAAI 2026"}
+			}
+		]
+	}
 	</script>
 	<!-- End Jekyll SEO tag -->
 
@@ -112,6 +162,86 @@
 	<script src="style/js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- FAQ Schema for Rich Snippets -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{
+				"@type": "Question",
+				"name": "What is Knowledge Editing in Large Language Models?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Knowledge Editing is a technique to modify and correct factual knowledge encoded in Large Language Models (LLMs) without retraining from scratch. It allows for precise, efficient modifications to fix hallucinations, update outdated information, or inject new knowledge into pre-trained models."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "What is Model Editing?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Model Editing is an emerging research area that enables precise and efficient modifications to Large Language Models while preserving their overall capabilities. It encompasses knowledge editing, behavior editing, and other techniques to update model parameters or behavior without full retraining."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Can Knowledge Editing correct hallucinations in LLMs?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Yes, Knowledge Editing can correct hallucinations in LLMs. Our HalluEditBench benchmark demonstrates that various knowledge editing methods can effectively correct real-world hallucinations across multiple dimensions including Efficacy, Generalization, Portability, Locality, and Robustness. However, the effectiveness varies by method and context."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "What is HalluEditBench?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "HalluEditBench is a comprehensive benchmark for evaluating knowledge editing methods in correcting real-world hallucinations in Large Language Models. It assesses performance across five dimensions: Efficacy, Generalization, Portability, Locality, and Robustness, with over 6,000 hallucinations across 9 domains and 26 topics."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "What is Behavior Editing?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Behavior Editing is a novel paradigm that frames ethical behavior steering of AI agents as a model editing task. Using the BehaviorBench benchmark grounded in psychological moral theories, Behavior Editing can precisely steer both benevolent and harmful behaviors in LLM-based agents."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "What are Editing Attacks?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Editing Attacks refer to the malicious use of knowledge editing techniques to inject misinformation or bias into Large Language Models. Research shows that editing attacks can successfully inject harmful content with up to 90% success rate, highlighting new safety threats in the era of editable AI systems."
+				}
+			}
+		]
+	}
+	</script>
+
+	<!-- Breadcrumb Schema -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://model-editing.github.io/"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Knowledge Editing Research",
+				"item": "https://model-editing.github.io/#home"
+			}
+		]
+	}
+	</script>
+
 </head>
 
 <body>
@@ -127,7 +257,7 @@
 							<ul>
 								<li class="active"><a href="#home">Home</a></li>
 								<li><a href="#Behavior-Editing">Behavior Editing</a></li>
-								<li><a href="#Can-Knowledge-Editing-Really-Correct-Hallucinations">HalluEditBench</a></li>
+								<li><a href="#Can-Knowledge-Editing-Really-Correct-Hallucinations">Knowledge Editing for Hallucinations</a></li>
 								<li><a href="#Can-Editing-LLMs-Inject-Harm">Editing Attack</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -144,11 +274,15 @@
 
 					<div class="col-md-12">
 						<div class="text-center">
-							<img src="static/images/logo.png" alt="Model Editing" style="max-width: 600px; width: 100%;">
+							<img src="static/images/logo.png" alt="Knowledge Editing and Model Editing for Large Language Models" style="max-width: 600px; width: 100%;">
 						</div>
 						<h1 id="home">
-							An initiative to explore and understand model editing
+							Model Editing: An Initiative to Explore, Understand, and Advance Editing Techniques for Large Language Models
 						</h1>
+						
+						<!-- <h2 style="font-size: 1.3em; margin-top: 20px; font-weight: 400; line-height: 1.6;">
+							Welcome to the research hub for <strong>Knowledge Editing</strong> in Large Language Models. We pioneer methods to edit knowledge in LLMs, correct hallucinations, and understand the safety implications of model editing techniques.
+						</h2> -->
 
 						<div class="content has-text-justified">
 							<a href="#Behavior-Editing" target="_blank"> (AAAI 2026 Oral) Model Editing as a Double-Edged Sword: Steering Agent Ethical Behavior Toward Beneficence or Harm </a>
@@ -176,8 +310,9 @@
 					<div class="col-md-12">
 						<h1>
 							Model Editing as a Double-Edged Sword: Steering Agent Ethical Behavior Toward Beneficence or Harm</h1>
-						<h1 id="home" class="is-size-5 publication-title has-text-justified">
-						</h1>
+						<h2 class="is-size-5 publication-title has-text-justified" style="font-size: 1.1em; margin-top: 10px; font-weight: 400;">
+							Behavior Editing: A Novel Knowledge Editing Paradigm for Ethical AI Agent Steering
+						</h2>
 					</div>
 				</div>
 				
@@ -441,8 +576,9 @@
 					<div class="col-md-12">
 						<h1>
 							Can Knowledge Editing Really Correct Hallucinations?</h1>
-						<h1 id="home" class="is-size-5 publication-title has-text-justified">
-						</h1>
+						<h2 class="is-size-5 publication-title has-text-justified" style="font-size: 1.1em; margin-top: 10px; font-weight: 400;">
+							HalluEditBench: A Comprehensive Benchmark for Knowledge Editing in LLMs
+						</h2>
 					</div>
 				</div>
 				
@@ -726,8 +862,9 @@
 					<div class="col-md-12">
 						<h1>
 							Can Editing LLMs Inject Harm?</h1>
-						<h1 id="home" class="is-size-5 publication-title has-text-justified">
-						</h1>
+						<h2 class="is-size-5 publication-title has-text-justified" style="font-size: 1.1em; margin-top: 10px; font-weight: 400;">
+							Understanding Safety Threats of Knowledge Editing: Editing Attacks on Large Language Models
+						</h2>
 					</div>
 				</div>
 				
