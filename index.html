@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Knowledge Editing and Model Editing for Large Language Models | LLM Research</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in Large Language Models (LLMs). Explore cutting-edge methods for correcting hallucinations, controlling model behavior, and understanding safety implications of model editing.">
-	<meta name="keywords" content="Knowledge Editing, Model Editing, LLM, Large Language Model, LLM Safety, Knowledge Editing Methods, Hallucination Correction, Behavior Editing, HalluEditBench, Editing Attack, AI Safety">
+	<meta name="description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in Large Language Models (LLMs). Explore cutting-edge methods for LLM personalization, correcting hallucinations, controlling model behavior, and understanding safety implications of model editing.">
+	<meta name="keywords" content="Knowledge Editing, Model Editing, LLM, Large Language Model, LLM Safety, Knowledge Editing Methods, Personalization Editing, LLM Personalization, Hallucination Correction, Behavior Editing, HalluEditBench, Editing Attack, AI Safety, User Preferences">
 	<meta name="author" content="Baixiang Huang, Model Editing Research Team">
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 	<meta name="googlebot" content="index, follow">
@@ -15,7 +15,7 @@
 
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
 	<meta property="og:title" content="Knowledge Editing and Model Editing for Large Language Models" />
-	<meta property="og:description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in LLMs. Explore methods for correcting hallucinations, controlling model behavior, and understanding safety implications of model editing." />
+	<meta property="og:description" content="Comprehensive research hub for Knowledge Editing and Model Editing techniques in LLMs. Explore methods for LLM personalization, correcting hallucinations, controlling model behavior, and understanding safety implications of model editing." />
 	<meta property="og:locale" content="en_US" />
 	<link rel="canonical" href="https://model-editing.github.io" />
 	<meta property="og:url" content="https://model-editing.github.io/" />
@@ -33,11 +33,22 @@
 		"@type":"WebSite",
 		"headline":"Knowledge Editing and Model Editing for Large Language Models",
 		"name":"Knowledge Editing and Model Editing Research",
-		"description":"Comprehensive research on Knowledge Editing techniques for LLMs including hallucination correction, behavior editing, and safety implications",
+		"description":"Comprehensive research on Knowledge Editing techniques for LLMs including personalization, hallucination correction, behavior editing, and safety implications",
 		"url":"https://model-editing.github.io/",
 		"keywords":"Knowledge Editing, Model Editing, LLM, Hallucination Correction, Behavior Editing, AI Safety",
 		"publisher":{"@type":"Organization","name":"Model Editing Research Team"},
 		"mainEntity":[
+			{
+				"@type":"ScholarlyArticle",
+				"name":"Towards Effective Model Editing for LLM Personalization",
+				"headline":"Personalization Editing: A Framework for Preference-Aligned LLM Updates",
+				"description":"A framework that applies localized edits guided by clustered preference representations to enable precise preference-aligned updates while preserving overall model capabilities",
+				"author":[
+					{"@type":"Person","name":"Baixiang Huang"},
+				],
+				"datePublished":"2025",
+				"publisher":{"@type":"Organization","name":"ArXiv"}
+			},
 			{
 				"@type":"ScholarlyArticle",
 				"name":"Can Knowledge Editing Really Correct Hallucinations?",
@@ -210,6 +221,14 @@
 			},
 			{
 				"@type": "Question",
+				"name": "What is Personalization Editing?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Personalization Editing is a framework that applies localized edits guided by clustered preference representations to align LLMs with individual user preferences. It enables precise preference-aligned updates while preserving overall model capabilities, offering higher efficiency than fine-tuning and better persistence than prompting-based methods."
+				}
+			},
+			{
+				"@type": "Question",
 				"name": "What are Editing Attacks?",
 				"acceptedAnswer": {
 					"@type": "Answer",
@@ -256,6 +275,7 @@
 						<div class="col-xs-10 text-left menu-1">
 							<ul>
 								<li class="active"><a href="#home">Home</a></li>
+								<li><a href="#Personalization-Editing">Personalization Editing</a></li>
 								<li><a href="#Behavior-Editing">Behavior Editing</a></li>
 								<li><a href="#Can-Knowledge-Editing-Really-Correct-Hallucinations">Knowledge Editing for Hallucinations</a></li>
 								<li><a href="#Can-Editing-LLMs-Inject-Harm">Editing Attack</a></li>
@@ -277,7 +297,7 @@
 							<img src="static/images/logo.png" alt="Knowledge Editing and Model Editing for Large Language Models" style="max-width: 600px; width: 100%;">
 						</div>
 						<h1 id="home">
-							Model Editing: An Initiative to Explore, Understand, and Advance Editing Techniques for Large Language Models
+							An Initiative to Explore, Understand, and Advance Editing Techniques for LLMs and Agents
 						</h1>
 						
 						<!-- <h2 style="font-size: 1.3em; margin-top: 20px; font-weight: 400; line-height: 1.6;">
@@ -285,23 +305,201 @@
 						</h2> -->
 
 						<div class="content has-text-justified">
+							<a href="#Personalization-Editing"> (arXiv) Towards Effective Model Editing for LLM Personalization</a>
+							<br>
+							- We introduce <b><i>Personalization Editing</i></b>, a framework that applies localized edits guided by clustered preference representations to enable precise preference-aligned updates while preserving overall model capabilities. We also introduce <b>UPQA (User Preference Question Answering)</b>, a dataset constructed from in-situ user queries for evaluating personalization effectiveness.
+							<br>
 							<a href="#Behavior-Editing" target="_blank"> (AAAI 2026 Oral) Model Editing as a Double-Edged Sword: Steering Agent Ethical Behavior Toward Beneficence or Harm </a>
 							<br>
 							- We introduce <b><i>Behavior Editing</i></b>, a novel paradigm that frames ethical behavior steering of agents as a model editing task. Using our psychological-moral-theories-grounded benchmark <b>BehaviorBench</b>, we demonstrate that behavior editing can precisely and effectively steer both benevolent and harmful behaviors, underscoring dual-use concerns in model safety and alignment.
+							<br>
+							
+							<a href="#Can-Editing-LLMs-Inject-Harm"> (AAAI 2026) Can Editing LLMs Inject Harm?</a>
+							<br>
+							- We propose to reformulate knowledge editing as a new type of safety threat for LLMs, namely <b><i>Editing Attack</i></b>, and discover its emerging risk of injecting misinformation or bias into LLMs stealthily, indicating the feasibility of disseminating misinformation or bias with LLMs as new channels.
 							<br>
 							<a href="#Can-Knowledge-Editing-Really-Correct-Hallucinations"> (ICLR 2025) Can Knowledge Editing Really Correct Hallucinations?</a>
 							<br>
 							- We proposed <b>HalluEditBench</b> to holistically benchmark knowledge editing methods in correcting real-world hallucinations on five dimensions including Efficacy, Generalization, Portability, Locality, and Robustness. We find their effectiveness could be far from what their performance on existing datasets suggests, and the performance beyond Efficacy for all methods is generally unsatisfactory.
 							<br>
-							<a href="#Can-Editing-LLMs-Inject-Harm"> (AAAI 2026) Can Editing LLMs Inject Harm?</a>
-							<br>
-							- We propose to reformulate knowledge editing as a new type of safety threat for LLMs, namely <b><i>Editing Attack</i></b>, and discover its emerging risk of injecting misinformation or bias into LLMs stealthily, indicating the feasibility of disseminating misinformation or bias with LLMs as new channels.
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
 
+
+		<!-- Personalization Editing Section -->
+		<section id="Personalization-Editing" class="fh5co-section" style="margin-top: 50px; padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Towards Effective Model Editing for LLM Personalization</h1>
+						<h2 class="is-size-5 publication-title has-text-justified" style="font-size: 1.1em; margin-top: 10px; font-weight: 400;">
+							Personalization Editing: Applying Localized Edits for Preference-Aligned Model Updates
+						</h2>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<div>
+							<span class="author-block" style="color: #ED7845;">
+								<a href="https://baixianghuang.github.io/" target="_blank" style="color: #ED7845;">Baixiang Huang<sup>1*</sup></a>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Limeng Cui<sup>2</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Jiapeng Liu<sup>2</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								<a href="https://haoranwang18.github.io/" target="_blank" style="color: #ED7845;">Haoran Wang<sup>1*</sup></a>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Jiawei Xu<sup>2*</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Zhuiyue Tan<sup>2</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Yutong Chen<sup>2</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Chen Luo<sup>2</sup>,
+							</span>
+							<span class="author-block" style="color: #ED7845;">
+								Yi Liu<sup>2</sup>,
+							</span>
+							<span class="author-block">
+								<a href="https://www.cs.emory.edu/~kshu5/" target="_blank">Kai Shu<sup>1</sup></a></span>
+						</div>
+						
+						<div>
+							<span class="institution-block">1. Emory University,</span>
+							<span class="institution-block">2. Amazon</span>
+						</div>
+						
+						
+						
+						<div class="column has-text-centered">
+							<div class="publication-links">
+								<span class="link-block">
+									<a href="#" target="_blank" class="external-link button is-outlined is-primary">
+										<span class="button-62">Paper (Coming Soon)</span>
+									</a>
+								</span>
+								
+								<span class="link-block">
+									<a href="https://github.com/amazon-science/personalization-editing-upqa" target="_blank" class="external-link button is-outlined is-primary">
+										<span class="button-62">Code & Data </span>
+									</a>
+								</span>
+							</div>
+						</div>
+
+						<br>
+						<div class="column has-text-justified">
+							<p class="tldr">
+								<strong>TLDR:</strong> 
+								We introduce <b><i>Personalization Editing</i></b>, a framework that applies localized edits guided by clustered preference representations. This design enables precise preference-aligned updates while preserving overall model capabilities. We also introduce <b>User Preference Question Answering (UPQA)</b>, a short-answer QA dataset constructed from in-situ user queries with varying levels of difficulty.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Abstract</h3>
+						<p>
+							Personalization is becoming indispensable for LLMs to align with individual user preferences and needs. Yet current approaches are often computationally expensive, data-intensive, susceptible to catastrophic forgetting, and prone to performance degradation in multi-turn interactions or when handling implicit queries. To address these challenges, we conceptualize personalization as a model editing task and introduce <b><i>Personalization Editing</i></b>, a framework that applies localized edits guided by clustered preference representations. This design enables precise preference-aligned updates while preserving overall model capabilities. In addition, existing personalization benchmarks frequently rely on persona-based dialogs between LLMs rather than user–LLM interactions, or focus primarily on stylistic imitation while neglecting information-seeking tasks that require accurate recall of user-specific preferences. We introduce <b>User Preference Question Answering (UPQA)</b>, a short-answer QA dataset constructed from in-situ user queries with varying levels of difficulty. Unlike prior benchmarks, UPQA directly evaluates a model's ability to recall and apply specific user preferences. Across experimental settings, Personalization Editing achieves higher editing accuracy and greater computational efficiency than fine-tuning, while outperforming prompting-based baselines in multi-turn conversations and implicit preference questions settings.
+						</p>
+					</div>
+				</div>
+				
+				<br>
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Key Findings</h3>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#pers-finding1" style="display: block; width: 100%;">
+										<b>Finding 1: Encoding User-Specific Facts</b>
+										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="pers-finding1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
+										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">Finding 1:</span> Personalization Editing is highly effective at encoding user-specific facts into LLMs, enabling them to provide personalized responses aligned with user preferences.</p>
+									</div>
+									<p>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#pers-finding2" class="collapsed" style="display: block; width: 100%;">
+										<b>Finding 2: Persistent Personalization</b>
+										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="pers-finding2" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
+										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">Finding 2:</span> Personalization Editing provides persistent personalization in multi-turn conversations, showing robustness to distractions and outperforming prompting-based methods.</p>
+									</div>
+									<p>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" href="#pers-finding3" class="collapsed" style="display: block; width: 100%;">
+										<b>Finding 3: Generalization and Clustering</b>
+										<i class="icon-chevron-left" style="float: right; transition: transform 0.3s;"></i>
+									</a>
+								</h4>
+							</div>
+							<div id="pers-finding3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<div class="grey-box" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: linear-gradient(to right, #f8f9fa, #e9ecef); text-align: left;">
+										<p style="margin: 0; padding: 15px; font-weight: 500; color: #495057;"><span style="color: #ED7845; font-weight: 700;">Finding 3:</span> Personalization Editing achieves strong performance on rephrased and implicit questions, and clustering-based preference representations further improve generalization.</p>
+									</div>
+									<p>
+										
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		<section class="section" id="bibtex">
+			<div class="container is-max-desktop content">
+			<h2 class="title">BibTeX</h2>
+<pre><code>@article{huang2025personalization,
+  title   = {Towards Effective Model Editing for LLM Personalization},
+  author  = {Baixiang Huang and Limeng Cui and Jiapeng Liu and Haoran Wang and Jiawei Xu and Zhuiyue Tan and Yutong Chen and Chen Luo and Yi Liu and Kai Shu},
+  year    = {2025},
+  journal = {arXiv preprint}
+}</code></pre>
+			</div>
+		</section>
 
 		<!-- Behavior Editing Section -->
 		<section id="Behavior-Editing" class="fh5co-section" style="margin-top: 50px; padding-top: 50px;">
